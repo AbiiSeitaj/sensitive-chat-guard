@@ -1,0 +1,16 @@
+{
+  "name": "sensitive-chat-guard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chrome extension that warns before sensitive data is sent to ChatGPT or Claude.",
+  "scripts": {
+    "validate": "node scripts/validate-extension.mjs"
+  },
+  "keywords": [
+    "chrome-extension",
+    "privacy",
+    "chatgpt",
+    "claude"
+  ],
+  "license": "MIT"
+}
