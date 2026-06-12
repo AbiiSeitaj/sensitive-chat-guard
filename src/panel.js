@@ -144,7 +144,7 @@
             <p class="title">Sensitive data found</p>
             <p class="copy">Review these matches before the message leaves this page.</p>
           </div>
-          <button class="close" type="button" aria-label="Dismiss">×</button>
+          <button class="close" type="button" aria-label="Dismiss">&times;</button>
         </div>
         <div class="body">
           <p class="status"></p>
@@ -205,6 +205,9 @@
         handlers.onRandomize?.();
         nodes.status.textContent = "Random values replaced the sensitive matches. Review the message before sending.";
         nodes.status.classList.add("visible");
+        nodes.randomize.disabled = true;
+        nodes.randomize.textContent = "Randomized";
+        nodes.send.textContent = "Send randomized message";
       };
 
       nodes.send.onclick = () => {
