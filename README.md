@@ -47,13 +47,13 @@ scripts/validate-extension.mjs Basic manifest and source validation
 
 ## Development
 
-Run the local validation script before committing:
+Run the local validation and scanner regression tests before committing:
 
 ```sh
 npm run validate
 ```
 
-No build step is required. The extension runs from source as an unpacked Manifest V3 extension.
+No build step is required. The extension runs from source as an unpacked Manifest V3 extension. The test suite loads the scanner in an isolated JavaScript context and verifies representative detections, value-only replacements, credit card validation, public IP filtering, and date-of-birth randomization.
 
 ## Privacy posture
 
